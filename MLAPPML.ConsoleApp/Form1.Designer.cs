@@ -30,7 +30,6 @@ namespace MLAPPML.ConsoleApp
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -53,7 +52,6 @@ namespace MLAPPML.ConsoleApp
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.richTextBox2);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             // 
@@ -68,20 +66,11 @@ namespace MLAPPML.ConsoleApp
             this.splitContainer1.SplitterDistance = 550;
             this.splitContainer1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(227, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "nhập đường dẫn hình chữ viết tay vào richbox bên dưới";
-            // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(243, 48);
+            this.richTextBox2.Location = new System.Drawing.Point(463, 110);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(276, 315);
+            this.richTextBox2.Size = new System.Drawing.Size(65, 315);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
             // 
@@ -91,7 +80,7 @@ namespace MLAPPML.ConsoleApp
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(457, 450);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -135,7 +124,7 @@ namespace MLAPPML.ConsoleApp
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(246, 31);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Đọc đường dẫn";
+            this.button1.Text = "Đọc ảnh";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -152,7 +141,6 @@ namespace MLAPPML.ConsoleApp
             this.Name = "Form1";
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
@@ -170,7 +158,6 @@ namespace MLAPPML.ConsoleApp
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
