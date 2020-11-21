@@ -68,9 +68,9 @@ namespace MLAPPML.ConsoleApp
                 }
                 b.Save(String.Format("check.jpg"));
                
-                this.pictureBox1.CreateGraphics().Clear(Color.White);
-                this.pictureBox1.Image = new Bitmap(this.pictureBox1.ClientSize.Width, this.pictureBox1.ClientSize.Height);
-                richTextBox1.Text = "";
+                //this.pictureBox1.CreateGraphics().Clear(Color.White);
+                //this.pictureBox1.Image = new Bitmap(this.pictureBox1.ClientSize.Width, this.pictureBox1.ClientSize.Height);
+                //richTextBox1.Text = "";
             }
             //bm = new Bitmap(this.pictureBox1.ClientSize.Width, this.pictureBox1.ClientSize.Height);
 
@@ -95,8 +95,8 @@ namespace MLAPPML.ConsoleApp
             Console.WriteLine("Using model to make single prediction -- Comparing actual Label with predicted Label from sample data...\n\n");
             Console.WriteLine($"ImageSource: {sampleData.ImageSource}");
             Console.WriteLine($"\n\nPredicted Label value {predictionResult.Prediction} \nPredicted Label scores: [{String.Join(",", predictionResult.Score)}]\n\n");
-            richTextBox2.Text = "";
-            source = "";
+            this.pictureBox1.CreateGraphics().Clear(Color.White);
+            this.pictureBox1.Image = new Bitmap(this.pictureBox1.ClientSize.Width, this.pictureBox1.ClientSize.Height);
         }
 
         private void button3_Click(object sender, EventArgs e)
